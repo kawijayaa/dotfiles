@@ -1,6 +1,6 @@
 # dotfiles
 
-## Technology used:
+## Technologies used:
 
 - zsh (shell)
 - fzf (fuzzy finder)
