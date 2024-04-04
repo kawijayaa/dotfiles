@@ -10,6 +10,7 @@ return {
 			require("nvim-tree").setup({
 				filters = {
 					custom = { "node_modules", ".git" },
+					git_ignored = false,
 				},
 				vim.keymap.set("n", "<leader>x", ":NvimTreeToggle<CR>", { desc = "Toggle Explorer" }),
 			})
