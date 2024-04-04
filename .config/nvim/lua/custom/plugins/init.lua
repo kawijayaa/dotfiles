@@ -34,14 +34,21 @@ return {
 			vim.fn["mkdp#util#install"]()
 		end,
 	},
-	-- {
-	--   'Pocco81/auto-save.nvim',
-	--   config = function()
-	--     require('auto-save').setup {
-	--       enabled = false,
-	--       debounce_delay = 1000,
-	--       vim.keymap.set('n', '<leader>as', ':ASToggle<CR>'),
-	--     }
-	--   end,
-	-- },
+	{
+		"christoomey/vim-tmux-navigator",
+		cmd = {
+			"TmuxNavigateLeft",
+			"TmuxNavigateDown",
+			"TmuxNavigateUp",
+			"TmuxNavigateRight",
+			"TmuxNavigatePrevious",
+		},
+		keys = {
+			{ "<c-h>", "<cmd><C-U>TmuxNavigateLeft<cr>" },
+			{ "<c-j>", "<cmd><C-U>TmuxNavigateDown<cr>" },
+			{ "<c-k>", "<cmd><C-U>TmuxNavigateUp<cr>" },
+			{ "<c-l>", "<cmd><C-U>TmuxNavigateRight<cr>" },
+			{ "<c-\\>", "<cmd><C-U>TmuxNavigatePrevious<cr>" },
+		},
+	},
 }
