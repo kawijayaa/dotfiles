@@ -6,6 +6,7 @@ plugins=(git
         zsh-autosuggestions
         zsh-syntax-highlighting
         you-should-use
+        zsh-vi-mode
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -17,10 +18,7 @@ else
 fi
 
 # Path variables
-export GOPATH=$HOME/go
-export PATH=$PATH:$GOPATH/bin
 export PATH="$PATH:/opt/nvim-linux64/bin"
-export PATH="$PATH:/opt/apache-maven-3.9.6/bin"
 export PATH="$PATH:$HOME/.local/bin"
 
 # Function to create a directory and cd into the newly created directory
@@ -70,7 +68,7 @@ export NVM_DIR="$HOME/.nvm"
 # Go version manager
 [[ -s "/home/oka/.gvm/scripts/gvm" ]] && source "/home/oka/.gvm/scripts/gvm"
 
-# Python version emanager
+# Python version manager
 export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
