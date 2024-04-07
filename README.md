@@ -1,5 +1,7 @@
 # dotfiles
 
+![](https://i.imgur.com/lULH0LB.png)
+
 ## Technologies used:
 
 - [zsh (shell)](https://zsh.org)
