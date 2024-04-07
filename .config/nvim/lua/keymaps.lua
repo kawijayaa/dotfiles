@@ -43,3 +43,7 @@ vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]])
 vim.keymap.set("n", "i", function()
 	return string.match(vim.api.nvim_get_current_line(), "%g") == nil and "cc" or "i"
 end, { expr = true, noremap = true })
+
+-- Use gj and gk instead of j and k
+vim.keymap.set({ "n", "v" }, "j", "gj", { noremap = true })
+vim.keymap.set({ "n", "v" }, "k", "gk", { noremap = true })
