@@ -8,7 +8,7 @@ require("lazy").setup({
 	require("kawijayaa/plugins/lspconfig"),
 	require("kawijayaa/plugins/conform"),
 	require("kawijayaa/plugins/cmp"),
-	require("kawijayaa/plugins/tokyonight"),
+	require("kawijayaa/plugins/nightfox"),
 	require("kawijayaa/plugins/todo-comments"),
 	require("kawijayaa/plugins/mini"),
 	require("kawijayaa/plugins/treesitter"),
