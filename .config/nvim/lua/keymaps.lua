@@ -28,15 +28,6 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 	end,
 })
 
--- Open telescope on startup
-vim.api.nvim_create_autocmd("VimEnter", {
-	callback = function()
-		if vim.fn.argv(0) == "" then
-			require("telescope.builtin").find_files()
-		end
-	end,
-})
-
 -- Convert CRLF to LF
 vim.keymap.set("n", "<leader>lf", ":%s/\\r//g<CR>", { desc = "Remove ^M" })
 
@@ -56,3 +47,7 @@ end, { expr = true, noremap = true })
 -- Use gj and gk instead of j and k
 vim.keymap.set({ "n", "v" }, "j", "gj", { noremap = true })
 vim.keymap.set({ "n", "v" }, "k", "gk", { noremap = true })
+
+-- Mason and Lazy keymaps
+vim.keymap.set("n", "<leader>m", ":Mason<CR>", { desc = "Open Mason" })
+vim.keymap.set("n", "<leader>z", ":Lazy<CR>", { desc = "Open Lazy" })
