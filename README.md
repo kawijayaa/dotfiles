@@ -1,7 +1,7 @@
 # dotfiles
 
-![](https://i.imgur.com/adUOpcL.png)
-![](https://i.imgur.com/lULH0LB.png)
+![](https://i.imgur.com/PenNKnP.png)
+![](https://i.imgur.com/BI0rCMt.png)
 
 - [zsh (shell)](https://zsh.org)
 - [fzf (fuzzy finder)](https://github.com/junegunn/fzf)
