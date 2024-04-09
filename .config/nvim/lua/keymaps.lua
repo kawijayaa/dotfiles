@@ -38,6 +38,7 @@ vim.keymap.set("x", "p", [["_dP]])
 vim.keymap.set({ "n", "v" }, "y", [["+y]])
 vim.keymap.set("n", "Y", [["+Y]])
 vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]])
+vim.keymap.set({ "n", "v" }, "c", [["_c]])
 
 -- Insert indented when line is empty
 vim.keymap.set("n", "i", function()
