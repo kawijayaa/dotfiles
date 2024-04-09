@@ -10,8 +10,8 @@
 - [stow (symlink manager)](https://www.gnu.org/software/stow/)
 - [zoxide (cd replacement)](https://github.com/ajeetdsouza/zoxide)
 - [tmux (terminal multiplexer)](https://github.com/tmux/tmux)
-- [sesh (tmux session manager)](https://github.com/tmux/tmux)
-- [nightfox.nvim#carbonfox (neovim theme)](https://github.com/EdenEast/nightfox.nvim?tab=readme-ov-file#carbonfox) 
+- [sesh (tmux session manager)](https://github.com/joshmedeski/sesh)
+- [nightfox.nvim#carbonfox (neovim theme)](https://github.com/EdenEast/nightfox.nvim#carbonfox) 
 - [kickstart-modular.nvim (neovim config starting point)](https://github.com/dam9000/kickstart-modular.nvim)
 
 ## Setup:
