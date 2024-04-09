@@ -1,5 +1,6 @@
 # dotfiles
 
+![](https://i.imgur.com/adUOpcL.png)
 ![](https://i.imgur.com/lULH0LB.png)
 
 - [zsh (shell)](https://zsh.org)
