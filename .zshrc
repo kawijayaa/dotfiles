@@ -1,6 +1,6 @@
 export ZSH="$HOME/.oh-my-zsh"
 
-ZSH_THEME="steeef"
+ZSH_THEME="carbonfox-steeef"
 
 plugins=(git
         zsh-autosuggestions
