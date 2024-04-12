@@ -12,7 +12,7 @@ require("lazy").setup({
 	require("kawijayaa/plugins/todo-comments"),
 	require("kawijayaa/plugins/mini"),
 	require("kawijayaa/plugins/treesitter"),
-	require("kawijayaa/plugins/nvim-tree"),
+	require("kawijayaa/plugins/oil"),
 	require("kawijayaa/plugins/lualine"),
 	require("kawijayaa/plugins/harpoon"),
 	require("kawijayaa/plugins/markdown-preview"),
