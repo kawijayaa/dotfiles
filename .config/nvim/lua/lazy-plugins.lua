@@ -18,6 +18,9 @@ require("lazy").setup({
 	require("kawijayaa/plugins/markdown-preview"),
 	require("kawijayaa/plugins/vim-tmux-navigator"),
 	require("kawijayaa/plugins/alpha"),
+	require("kawijayaa/plugins/supermaven"),
+	require("kawijayaa/plugins/ts-autotag"),
+	require("kawijayaa/plugins/blame"),
 }, {
 	ui = {
 		icons = vim.g.have_nerd_font and {} or {
