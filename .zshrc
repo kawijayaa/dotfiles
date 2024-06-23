@@ -4,9 +4,10 @@ export EDITOR=nvim
 autoload -U compinit
 compinit
 
-source $HOME/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-source $HOME/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $HOME/.zsh/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
+source $HOME/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh
 source $HOME/.zsh/omz-git/git.plugin.zsh
+source $HOME/.zsh/you-should-use/you-should-use.plugin.zsh
 
 # Path variables
 export PATH="$PATH:/opt/nvim-linux64/bin"
