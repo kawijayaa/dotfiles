@@ -1,21 +1,12 @@
-export ZSH="$HOME/.oh-my-zsh"
+export EDITOR=nvim
 
-ZSH_THEME="carbonfox-steeef"
+# Plugins
+autoload -U compinit
+compinit
 
-plugins=(git
-        zsh-autosuggestions
-        zsh-syntax-highlighting
-        you-should-use
-        zsh-vi-mode
-)
-
-source $ZSH/oh-my-zsh.sh
-
-if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='vim'
-else
-  export EDITOR='nvim'
-fi
+source $HOME/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $HOME/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $HOME/.zsh/omz-git/git.plugin.zsh
 
 # Path variables
 export PATH="$PATH:/opt/nvim-linux64/bin"
@@ -34,10 +25,16 @@ function mkcd {
 
 # Replace ls with exa
 alias ls="exa --icons"
-alias ll="exa --icons -l"
-alias la="exa --icons -a"
-alias lla="exa --icons -la"
+alias ll="exa --icons -lh"
+alias la="exa --icons -lAh"
+alias l="exa --icons -lah"
 alias tree="exa --icons -T"
+
+# Directory aliases
+alias -g ...='../..'
+alias -g ....='../../..'
+alias -g .....='../../../..'
+alias -g ......='../../../../..'
 
 # Enable remote desktop
 alias remotedesktop="sudo /etc/init.d/xrdp"
@@ -47,9 +44,6 @@ alias rmzone="find . -name '*Zone.Identifier' -delete"
 
 # Django manage alias
 alias manage="python3 manage.py"
-
-# Start OS232 VM and SSH to VM
-alias os232="bash ~/start_os232.sh"
 
 # Python environment alias
 alias activate="source env/bin/activate"
@@ -83,3 +77,6 @@ export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
 
 # Zoxide
 eval "$(zoxide init zsh)"
+
+# Oh My Posh
+eval "$(oh-my-posh init zsh --config $HOME/.config/oh-my-posh/pure.omp.json)"

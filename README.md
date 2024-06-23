@@ -1,10 +1,11 @@
 # dotfiles
 
-![](https://i.imgur.com/PenNKnP.png)
-![](https://i.imgur.com/BI0rCMt.png)
+![](https://i.imgur.com/IF5DcXr.png)
+![](https://i.imgur.com/BNkEhAP.png)
 
 - [zsh (shell)](https://zsh.org)
 - [fzf (fuzzy finder)](https://github.com/junegunn/fzf)
+- [oh-my-posh (prompt)](https://github.com/JanDeDobbeleer/oh-my-posh)
 - [neovim (text editor)](https://github.com/neovim/neovim)
 - [exa (ls replacement)](https://github.com/ogham/exa)
 - [fd (find replacement)](https://github.com/sharkdp/fd)

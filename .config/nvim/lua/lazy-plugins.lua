@@ -21,6 +21,7 @@ require("lazy").setup({
 	require("kawijayaa/plugins/supermaven"),
 	require("kawijayaa/plugins/ts-autotag"),
 	require("kawijayaa/plugins/blame"),
+	require("kawijayaa/plugins/transparent"),
 }, {
 	ui = {
 		icons = vim.g.have_nerd_font and {} or {

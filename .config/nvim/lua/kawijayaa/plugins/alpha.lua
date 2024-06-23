@@ -6,7 +6,6 @@ return {
 			local dashboard = require("alpha.themes.dashboard")
 
 			dashboard.section.header.val = {
-				[[                                                                       ]],
 				[[                                                                     ]],
 				[[       ████ ██████           █████      ██                     ]],
 				[[      ███████████             █████                             ]],
@@ -19,7 +18,6 @@ return {
 			}
 
 			dashboard.section.header.opts.hl = {
-				{ { "NvimLogo2", 0, 1 } },
 				{ { "NvimLogo2", 0, 1 }, { "NvimLogo1", 46, 52 } },
 				{ { "NvimLogo2", 0, 55 }, { "NvimLogo1", 61, 102 } },
 				{ { "NvimLogo2", 0, 55 }, { "NvimLogo1", 64, 90 } },
