@@ -36,6 +36,10 @@ alias -g ....='../../..'
 alias -g .....='../../../..'
 alias -g ......='../../../../..'
 
+# Keybindings
+bindkey "^N" down-line-or-history
+bindkey "^P" up-line-or-history
+
 # Enable remote desktop
 alias remotedesktop="sudo /etc/init.d/xrdp"
 
