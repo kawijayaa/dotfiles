@@ -9,9 +9,17 @@ source $HOME/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh
 source $HOME/.zsh/omz-git/git.plugin.zsh
 source $HOME/.zsh/you-should-use/you-should-use.plugin.zsh
 
+# History
+HISTFILE=~/.zsh_history
+HISTSIZE=10000
+SAVEHIST=1000
+setopt SHARE_HISTORY
+setopt HIST_SAVE_NO_DUPS
+
 # Path variables
 export PATH="$PATH:/opt/nvim-linux64/bin"
 export PATH="$PATH:$HOME/.local/bin"
+export PATH="$PATH:/home/linuxbrew/.linuxbrew/bin"
 
 # Function to create a directory and cd into the newly created directory
 function mkcd {
@@ -32,10 +40,10 @@ alias l="exa --icons -lah"
 alias tree="exa --icons -T"
 
 # Directory aliases
-alias -g ...='../..'
-alias -g ....='../../..'
-alias -g .....='../../../..'
-alias -g ......='../../../../..'
+alias -g ..='cd ..'
+alias -g ...='cd ../..'
+alias -g ....='cd ../../..'
+alias -g .....='cd ../../../..'
 
 # Keybindings
 bindkey "^N" down-line-or-history
