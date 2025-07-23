@@ -190,6 +190,16 @@ return {
 			local ensure_installed = vim.tbl_keys(servers or {})
 			vim.list_extend(ensure_installed, {
 				"stylua", -- Used to format Lua code
+				"pyright",
+				"rust_analyzer",
+				"gopls",
+				"tailwindcss-language-server",
+				"tinymist",
+				"typescript-language-server",
+				"dockerfile-language-server",
+				"docker-compose-language-service",
+				"clangd",
+				"bash-language-server",
 			})
 			require("mason-tool-installer").setup({ ensure_installed = ensure_installed })
 			require("lspconfig").gleam.setup({})

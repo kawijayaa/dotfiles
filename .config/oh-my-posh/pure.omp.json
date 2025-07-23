@@ -1,64 +1,75 @@
 {
-    "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
-    "blocks": [
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "transient_prompt": {
+    "template": "❯ ",
+    "foreground": "lightGreen",
+    "foreground_templates": [
+      "{{ if gt .Code 0 }}#BF616A{{ end }}"
+    ]
+  },
+  "blocks": [
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "segments": [
         {
-            "alignment": "left",
-            "segments": [
-                {
-                    "foreground": "lightYellow",
-                    "style": "plain",
-                    "template": "{{ .UserName }} <#ffffff>at</> ",
-                    "type": "session"
-                },
-                {
-                    "foreground": "red",
-                    "style": "plain",
-                    "template": "{{ .HostName }} ",
-                    "type": "session"
-                },
-                {
-                    "foreground": "cyan",
-                    "properties": {
-                        "style": "folder"
-                    },
-                    "style": "plain",
-                    "template": "<#ffffff>in</> {{ .Path }} ",
-                    "type": "path"
-                },
-                {
-                    "foreground": "#ff94df",
-                    "properties": {
-                        "branch_icon": " <#ff94df><b>\ue0a0 </b></>",
-                        "fetch_stash_count": true
-                    },
-                    "style": "plain",
-                    "template": "<#ffffff>on</> {{ .HEAD }}{{ if gt .StashCount 0 }} \ueb4b {{ .StashCount }}{{ end }} ",
-                    "type": "git"
-                }
-            ],
-            "type": "prompt"
+          "properties": {
+            "cache_duration": "none"
+          },
+          "template": "{{ .UserName }} <#ffffff>at</> ",
+          "foreground": "lightYellow",
+          "type": "session",
+          "style": "plain"
         },
         {
-            "alignment": "left",
-            "newline": true,
-            "segments": [
-                {
-                    "foreground": "lightGreen",
-                    "style": "plain",
-                    "template": "\u276f",
-                    "type": "text"
-                }
-            ],
-            "type": "prompt"
+          "properties": {
+            "cache_duration": "none"
+          },
+          "template": "{{ .HostName }} ",
+          "foreground": "red",
+          "type": "session",
+          "style": "plain"
+        },
+        {
+          "properties": {
+            "cache_duration": "none",
+            "style": "folder"
+          },
+          "template": "<#ffffff>in</> {{ .Path }} ",
+          "foreground": "cyan",
+          "type": "path",
+          "style": "plain"
+        },
+        {
+          "properties": {
+            "branch_icon": " <#ff94df><b>\ue0a0 </b></>",
+            "cache_duration": "none",
+            "fetch_stash_count": true
+          },
+          "template": "<#ffffff>on</> {{ .HEAD }}{{ if gt .StashCount 0 }} \ueb4b {{ .StashCount }}{{ end }} ",
+          "foreground": "#ff94df",
+          "type": "git",
+          "style": "plain"
         }
-    ],
-    "transient_prompt": {
-        "foreground": "lightGreen",
-        "foreground_templates": [
-            "{{ if gt .Code 0 }}#BF616A{{ end }}"
-        ],
-        "template": "\u276f "
+      ]
     },
-    "final_space": true,
-    "version": 2
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "segments": [
+        {
+          "properties": {
+            "cache_duration": "none"
+          },
+          "template": "❯",
+          "foreground": "lightGreen",
+          "type": "text",
+          "style": "plain"
+        }
+      ],
+      "newline": true
+    }
+  ],
+  "version": 3,
+  "final_space": true
 }
