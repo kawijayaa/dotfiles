@@ -1,13 +1,13 @@
 # dotfiles
 
-![](https://i.imgur.com/qyuBMO7.png)
+![](./.config/assets/screenshot)
 
 - [zsh (shell)](https://zsh.org)
 - [hyprland (wm)](https://hypr.land/)
 - [fzf (fuzzy finder)](https://github.com/junegunn/fzf)
 - [oh-my-posh (prompt)](https://github.com/JanDeDobbeleer/oh-my-posh)
 - [neovim (text editor)](https://github.com/neovim/neovim)
-- [alacritty (terminal)](https://alacritty.org/)
+- [kitty (terminal)](https://github.com/kovidgoyal/kitty)
 - [exa (ls replacement)](https://github.com/ogham/exa)
 - [waybar (wayland bar)](https://github.com/Alexays/Waybar)
 - [fd (find replacement)](https://github.com/sharkdp/fd)

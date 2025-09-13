@@ -42,6 +42,9 @@ alias la="eza --icons -lAh"
 alias l="eza --icons -lah"
 alias tree="eza --icons -T"
 
+alias vi="nvim"
+alias vim="nvim"
+
 # Directory aliases
 alias -g ..='cd ..'
 alias -g ...='cd ../..'
@@ -67,3 +70,12 @@ eval "$(zoxide init zsh)"
 eval "$(oh-my-posh init zsh --config $HOME/.config/oh-my-posh/pure.omp.json)"
 
 fastfetch
+
+[[ -s "/home/oka/.gvm/scripts/gvm" ]] && source "/home/oka/.gvm/scripts/gvm"
+
+# bun completions
+[ -s "/home/oka/.bun/_bun" ] && source "/home/oka/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
