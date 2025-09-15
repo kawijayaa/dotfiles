@@ -1,2 +1,2 @@
 [default_session]
-startup_command = "tmux split-window -v -p 33 && tmux select-pane -t :.+ && nvim"
+startup_command = "tmux split-window -v && tmux select-pane -t :.+ && nvim"
